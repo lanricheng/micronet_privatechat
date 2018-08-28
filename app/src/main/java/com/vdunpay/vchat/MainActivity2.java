@@ -79,8 +79,6 @@ public class MainActivity2 extends AppCompatActivity implements View.OnClickList
                     IsMainActivity=false;
                 }
 
-              //  Log.d(">>>>>>>>>>>>>>>>", "IsMainActivity:  "+IsMainActivity);
-
                 if ( IsMainActivity) {
 
                     tv.setText("");
