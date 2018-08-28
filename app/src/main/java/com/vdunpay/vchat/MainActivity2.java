@@ -87,7 +87,6 @@ public class MainActivity2 extends AppCompatActivity implements View.OnClickList
 
                     Intent intent = new Intent(MainActivity2.this, LockActivity.class);
                     intent.putExtra(Contants.INTENT_SECONDACTIVITY_KEY, LockMode.VERIFY_PASSWORD);
-                    //    startActivity(intent);
                     startActivityForResult(intent,1);
 
                 }
