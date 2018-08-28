@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00FFFFFF"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_horizontal"
+          android:layout_marginTop="@dimen/y25"
+          android:textColor="@color/black"
+          android:textSize="@dimen/y35"
+          android:text="@string/wxbind"/>
+
+        <EditText
+            android:id="@+id/edt_oldwxnumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y25"
+            android:padding="@dimen/y25"
+            android:textSize="@dimen/y33"
+            android:hint="@string/oldwxnumber"/>
+
+        <EditText
+            android:id="@+id/edt_newwxnumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/y25"
+            android:textSize="@dimen/y33"
+            android:hint="@string/newwxnumber"/>
+
+        <EditText
+            android:id="@+id/edt_newrewxnumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/y25"
+            android:textSize="@dimen/y33"
+            android:hint="@string/newrewxnumber"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/y35"
+            android:layout_marginBottom="@dimen/y25">
+
+            <Button
+                android:id="@+id/btn_bindwxok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ok"
+                android:background="@drawable/button_black"
+                android:textSize="@dimen/y33"/>
+
+            <Button
+                android:id="@+id/btn_bindwxcancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/y15"
+                android:text="@string/cancel"
+                android:background="@drawable/button_black"
+                android:textSize="@dimen/y33"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

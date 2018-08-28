@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">聚密聊</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="title_chat">密聊</string>
+    <string name="title_contact">联系人</string>
+    <string name="title_mine">我的</string>
+    <string name="delete">删除</string>
+    <string name="setting">设置</string>
+    <string name="mypubkey">我的公钥</string>
+    <string name="lookpubkey">查看</string>
+    <string name="qqbind">绑定QQ</string>
+    <string name="wxbind">绑定微信</string>
+    <string name="edit">编辑</string>
+    <string name="unbind">未绑定</string>
+    <string name="addfriendtip">扫一扫上面的二维码，加我好友</string>
+    <string name="yourpubkey">您的公钥是: </string>
+    <string name="ok">确 认</string>
+    <string name="cancel">取 消</string>
+    <string name="back">返 回</string>
+    <string name="oldqqnumber">请输入您已绑定的QQ号</string>
+    <string name="qqnumber">请输入您要绑定的QQ号</string>
+    <string name="reqqnumber">请再次输入您要绑定的QQ号</string>
+    <string name="newqqnumber">请输入您要绑定的新QQ号</string>
+    <string name="newreqqnumber">请再次输入您要绑定的新QQ号</string>
+
+    <string name="oldwxnumber">请输入您已绑定的微信号</string>
+    <string name="wxnumber">请输入您要绑定的微信号</string>
+    <string name="rewxnumber">请再次输入您要绑定的微信号</string>
+    <string name="newwxnumber">请输入您要绑定的新微信号</string>
+    <string name="newrewxnumber">请再次输入您要绑定的新微信号</string>
+
+    <string name="seach">搜索</string>
+    <string name="zhangsan">张三</string>
+    <string name="btnsend">发送</string>
+    <string name="addfriend">添加朋友</string>
+    <string name="qrshaomiao">扫一扫</string>
+    <string name="usernameoffriend">好友昵称</string>
+    <string name="friendid">好友ID</string>
+    <string name="searchtipmsg">未找到相关搜索结果</string>
+    <string name="unusername">未知用户名</string>
+    <string name="newfriend">新的朋友</string>
+    <string name="nonewfriend">暂时没有新的好友申请</string>
+    <string name="added">已添加</string>
+    <string name="agree">同意</string>
+    <string name="qqlogin">QQ登陆</string>
+    <string name="wxlogin">微信登陆</string>
+    <string name="login">登陆</string>
+    <string name="logintype">选择登陆方式</string>
+
+    <string name="usericon">头像</string>
+    <string name="username">昵称</string>username
+    <string name="myid">ID</string>username
+    <string name="testtext">123456</string>username
+    <string name="userqrcore">二维码名片</string>username
+    <string name="userinfo">个人信息</string>username
+    <string name="newfriendid">对方ID :</string>
+    <string name="newfriendidusername">对方昵称 :</string>
+    <string name="newfriendverify">朋友验证</string>
+    <string name="finish">完成</string>
+    <string name="setremarkname">为朋友设置备注</string>
+    <string name="newfriendremark">对方发来的验证消息为\"我是你的***\"</string>
+    <string name="input">填入</string>
+    <string name="newfriendinfo">对方个人信息</string>
+    <string name="save">保存</string>
+    <string name="newfriendinfomsg">详细资料</string>
+    <string name="addtocontact">添加到联系人</string>
+
+    <string name="verifymsg">你需要发送验证申请，等对方通过</string>
+
+</resources>

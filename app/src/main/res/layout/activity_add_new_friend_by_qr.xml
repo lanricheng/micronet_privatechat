@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vdunpay.vchat.newfriend.AddNewFriendByQR">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_ef"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y100"
+            android:background="@color/black"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/y15">
+
+            <ImageView
+                android:id="@+id/imv_back"
+                android:layout_width="@dimen/y40"
+                android:layout_height="@dimen/y40"
+                android:src="@mipmap/back" />
+
+            <TextView
+                android:id="@+id/tv_chatusername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="@string/newfriendverify"
+                android:textColor="@color/white"
+                android:textSize="@dimen/y33" />
+
+            <TextView
+                android:id="@+id/tv_finish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:text="@string/finish"
+                android:textColor="@color/bg_green"
+                android:textSize="@dimen/y30" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y25"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/y15"
+                android:text="@string/newfriendinfo"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/y30" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/y15"
+                android:layout_marginTop="@dimen/y13"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/y10"
+                android:paddingTop="@dimen/y15">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/newfriendid"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/y33" />
+
+                <TextView
+                    android:id="@+id/tv_friendnicheng"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/testtext"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/y33" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/y15"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/y10"
+                android:paddingTop="@dimen/y15">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/newfriendidusername"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/y33" />
+
+                <TextView
+                    android:id="@+id/tv_friendid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/zhangsan"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/y33" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y35"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/y15"
+                android:text="@string/setremarkname"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/y30" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y15">
+
+                <EditText
+                    android:id="@+id/edit_newfriendremark"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y90"
+                    android:layout_marginLeft="@dimen/y15"
+                    android:singleLine="true"
+                    android:textColorHint="#8F8E94"
+                    android:textSize="@dimen/y33"
+                    android:theme="@style/MyEditText" />
+
+                <ImageView
+                    android:id="@+id/img_delete"
+                    android:layout_width="@dimen/y30"
+                    android:layout_height="@dimen/y30"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/y25"
+                    android:src="@mipmap/qrcore" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/y15"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/newfriendremark"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/y30" />
+
+                <TextView
+                    android:id="@+id/tv_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/y20"
+                    android:text="@string/input"
+                    android:textColor="@color/bg_green"
+                    android:textSize="@dimen/y30" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval"
+    android:useLevel="false">
+ <!--   <stroke android:width="1dip" android:color="#000000" />-->
+<!--    <size
+        android:width="15dp"
+        android:height="15dp" />-->
+        <corners android:radius="50dp"></corners>
+
+    <!--    <padding android:left="5dp"
+            android:right="5dp"></padding>-->
+        <solid android:color="#FF4D4D"></solid>
+
+        <item android:name="android:minWidth">18dp</item>
+        <item android:name="android:minHeight">18dp</item>
+        <item android:name="android:layout_height">wrap_content</item>
+        <item android:name="android:layout_width">wrap_content</item>
+        <item android:name="android:background">@drawable/number_prompt</item>
+        <item android:name="android:paddingBottom">1dp</item>
+        <item android:name="android:textColor">@color/white</item>
+        <item android:name="android:textSize">12sp</item>
+        <item android:name="android:gravity">center</item>
+</shape>

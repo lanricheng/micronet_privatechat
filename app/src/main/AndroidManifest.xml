@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.vdunpay.vchat">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 二维码扫描框权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- 读写 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+
+    <!--消息推送权限-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name="com.vdunpay.application.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/appicon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".login.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+
+        <!-- QQ登录配置 start -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1107773106" />
+            </intent-filter>
+        </activity>
+
+        <!-- SDK_V2.0引入了AssistActivity，开发者需在androidManifest.xml中注册。代码如下： -->
+
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- QQ登录配置 end -->
+
+
+        <!-- 微信登录配置 start -->          <!--android:theme="@style/wx_login_style"-->
+        <activity
+            android:name="com.vdunpay.vchat.wxapi.WXEntryActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:theme="@style/wx_login_style">
+           <intent-filter>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.DEFAULT"/>
+            <data android:scheme="sdksample"/>
+          </intent-filter>
+        </activity>
+        <!-- 微信登录配置 end -->
+
+
+        <!--
+            <activity
+            android:name=".MainActivity2"
+            android:label="@string/title_activity_main2"></activity>
+        -->
+
+        <activity android:name=".chat.ChatFragment" />
+        <activity android:name=".contact.ContactFragment" />
+        <activity android:name=".mine.MineFragment" />
+        <activity android:name=".mine.SettingActivity" />
+        <activity android:name=".chatting.ChattingActivity" />
+        <activity android:name="com.vdunpay.qrcore.WeChatCaptureActivity" />
+        <activity android:name=".searchview.ContactSearchActivity" />
+        <activity android:name=".newfriend.FriendRequestListActivity" />
+
+
+        <activity
+            android:name=".MainActivity2"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+
+        <activity
+            android:name="com.vdunpay.gesturelock.activity.LockTestActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+
+        </activity>
+
+        <!-- <activity android:name=".LoginActivity" /> -->
+        <activity android:name=".newfriend.AddNewFriendByQR" />
+        <activity android:name="com.vdunpay.bindmanager.QQBindActivity" />
+        <activity android:name="com.vdunpay.gesturelock.activity.LockActivity" />
+        <activity android:name=".newfriend.ValidateNewFriend"></activity>
+
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.vdunpay.vchat"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <service
+            android:name="com.vdunpay.notificationserver.NotificationService"
+            android:enabled="true"
+            android:label="NotificationService">
+            <intent-filter>
+                <action android:name="com.vdunpay.notificationserver.NotificationService" />
+            </intent-filter>
+        </service>
+
+    </application>
+
+
+</manifest>

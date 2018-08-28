@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vdunpay.vchat.newfriend.ValidateNewFriend">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_ef"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/layout_head"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y130"
+            android:background="@color/black"
+            android:fitsSystemWindows="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imv_userinfoback"
+                android:layout_width="@dimen/y50"
+                android:layout_height="@dimen/y50"
+                android:src="@mipmap/back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/y15"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/y35"
+                android:text="@string/newfriendinfomsg"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y160"
+            android:layout_marginTop="@dimen/y30"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imv_newfriendicon"
+                android:layout_width="@dimen/y150"
+                android:layout_height="@dimen/y150"
+                android:paddingBottom="@dimen/y5"
+                android:paddingLeft="@dimen/y15"
+                android:paddingRight="@dimen/y15"
+                android:paddingTop="@dimen/y5"
+                android:src="@mipmap/mini_avatar_shadow" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="昵称"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/y35" />
+
+                <TextView
+                    android:id="@+id/tv_myid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x16"
+                    android:text="我的ID"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/y35" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/y50"
+            android:background="@color/white"
+            android:padding="@dimen/y20">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/y30"
+                android:text="@string/verifymsg"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/btn_cancel"
+                android:layout_marginTop="@dimen/y20">
+
+                <EditText
+                    android:id="@+id/edit_sendremark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/testtext"
+                    android:textSize="@dimen/y33"
+                    android:theme="@style/MyEditText"/>
+
+                <ImageView
+                    android:id="@+id/img_delete_sendremark"
+                    android:layout_width="@dimen/y30"
+                    android:layout_height="@dimen/y30"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/y25"
+                    android:src="@mipmap/delete"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/y50"
+            android:background="@color/white"
+            android:padding="@dimen/y20">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/y30"
+                android:text="@string/setremarkname"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/btn_cancel"
+                android:layout_marginTop="@dimen/y20">
+
+                <EditText
+                    android:id="@+id/edit_myremark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/testtext"
+                    android:textSize="@dimen/y33"
+                    android:theme="@style/MyEditText"/>
+
+                <ImageView
+                    android:id="@+id/img_delete_myremark"
+                    android:layout_width="@dimen/y30"
+                    android:layout_height="@dimen/y30"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/y25"
+                    android:src="@mipmap/delete"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_addnewfriend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/y60"
+            android:layout_marginRight="@dimen/y60"
+            android:layout_marginTop="@dimen/y100"
+            android:background="@drawable/button"
+            android:text="@string/addtocontact"
+            android:textColor="@color/white"
+            android:textSize="@dimen/y33" />
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vdunpay.vchat.chatting.ChattingActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_ef"
+        android:orientation="vertical"
+        android:fitsSystemWindows="true"
+        android:paddingBottom="@dimen/y8">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y100"
+                android:padding="@dimen/y15"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:background="@color/black">
+
+              <ImageView
+                    android:id="@+id/imv_back"
+                    android:layout_width="@dimen/y40"
+                    android:layout_height="@dimen/y40"
+                    android:src="@mipmap/back" />
+
+                <TextView
+                    android:id="@+id/tv_chatusername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:gravity="center"
+                    android:text="@string/zhangsan"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/y35" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_chat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingLeft="@dimen/y15"
+            android:paddingRight="@dimen/y8"
+            android:background="@color/white">
+
+            <ImageView
+                android:layout_width="@dimen/y68"
+                android:layout_height="@dimen/y68"
+                android:src="@mipmap/voice"/>
+
+            <EditText
+                android:id="@+id/et_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/y90"
+                android:layout_marginRight="@dimen/y10"
+                android:layout_marginLeft="@dimen/y10"
+                android:layout_weight="1"
+                android:textSize="@dimen/y30"
+                android:theme="@style/MyEditText"/>
+
+            <Button
+                android:id="@+id/btn_send"
+                android:layout_width="@dimen/y85"
+                android:layout_height="@dimen/y68"
+                android:background="@drawable/button"
+                android:text="@string/btnsend" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

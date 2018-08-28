@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#ebebeb">
+
+
+   <include
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       layout="@layout/layout_mymessage"
+       />
+
+
+
+    <LinearLayout
+        android:id="@+id/layout_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y50"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/y80"
+          android:orientation="horizontal"
+          android:gravity="center_vertical">
+
+          <View
+              android:layout_width="0dp"
+              android:layout_height="1dp"
+              android:layout_weight="0.05"
+              android:background="@color/gray"/>
+
+          <TextView
+              android:id="@+id/tv_setting"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="0.1"
+              android:layout_marginLeft="@dimen/y15"
+              android:textSize="@dimen/y31"
+              android:textColor="@color/black"
+              android:text="@string/setting"/>
+
+          <View
+              android:layout_width="0dp"
+              android:layout_height="1dp"
+              android:layout_weight="0.85"
+              android:background="@color/gray"/>
+      </LinearLayout>
+
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/y80"
+          android:orientation="horizontal"
+          android:layout_marginLeft="@dimen/y15"
+          android:gravity="center_vertical">
+
+
+          <ImageView
+              android:layout_width="@dimen/y60"
+              android:layout_height="@dimen/y60"
+              android:padding="@dimen/x10"
+              android:src="@mipmap/pubkicon"/>
+
+          <TextView
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:text="@string/mypubkey"
+              android:textSize="@dimen/y33"
+              android:textColor="@color/black"
+              android:layout_weight="0.8"/>
+
+          <TextView
+              android:id="@+id/tv_querypubkey"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:text="@string/lookpubkey"
+              android:textSize="@dimen/y30"
+              android:textColor="@color/black"
+              android:layout_weight="0.2"/>
+
+      </LinearLayout>
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="0.5dp"
+          android:background="@color/gray"/>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/y80"
+          android:orientation="horizontal"
+          android:layout_marginLeft="@dimen/y15"
+          android:gravity="center_vertical">
+
+          <ImageView
+              android:layout_width="@dimen/y60"
+              android:layout_height="@dimen/y60"
+              android:padding="@dimen/x10"
+              android:src="@mipmap/qqicon"/>
+
+          <TextView
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:text="@string/qqbind"
+              android:textSize="@dimen/y33"
+              android:textColor="@color/black"
+              android:layout_weight="0.8"/>
+
+          <TextView
+              android:id="@+id/tv_qqbind"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:text="@string/lookpubkey"
+              android:textSize="@dimen/y30"
+              android:textColor="@color/black"
+              android:layout_weight="0.2"/>
+
+      </LinearLayout>
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="0.5dp"
+          android:background="@color/gray"/>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/y80"
+          android:orientation="horizontal"
+          android:layout_marginLeft="@dimen/y15"
+          android:gravity="center_vertical">
+
+          <ImageView
+              android:layout_width="@dimen/y60"
+              android:layout_height="@dimen/y60"
+              android:padding="@dimen/x10"
+              android:src="@mipmap/wxicon"/>
+
+          <TextView
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:text="@string/wxbind"
+              android:textSize="@dimen/y33"
+              android:textColor="@color/black"
+              android:layout_weight="0.8"/>
+
+          <TextView
+              android:id="@+id/tv_wxbind"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:text="@string/unbind"
+              android:textSize="@dimen/y30"
+              android:textColor="@color/black"
+              android:layout_weight="0.2"/>
+
+      </LinearLayout>
+
+    </LinearLayout>
+       <!-- <ImageView
+            android:id="@+id/settingicon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tv_setting"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:gravity="center_vertical"
+            android:text="@string/setting"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:layout_marginRight="@dimen/y20"
+            android:src="@mipmap/ic_launcher" />-->
+
+
+<!--    <com.micronet.privatechat.mine.FoldLayout
+        android:id="@+id/foldlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutId="@layout/layout_menu_msg"
+        />-->
+
+</LinearLayout>

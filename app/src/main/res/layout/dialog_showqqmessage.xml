@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00FFFFFF"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="@drawable/layout_black_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#000000"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:gravity="center_vertical"
+            android:text="  我的QQ"/>          <!--标题-->
+
+        <RelativeLayout
+            android:id="@+id/dialog_showqqmessage_mymes"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+
+            <ImageView
+                android:id="@+id/dialog_showqqmessage_myimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:scaleType="center"
+                android:adjustViewBounds="true"
+                android:src="@mipmap/qqicon" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/dialog_showqqmessage_myimg"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:textSize="15dp"
+                    android:text="张三"
+                    android:textColor="#000000"
+                    android:gravity="bottom"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:textSize="15dp"
+                    android:text="1122345678"
+                    android:textColor="@color/color_666"
+                    android:gravity="top"/>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>    <!--my qq-->
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dcdcdc" />          <!--line-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/y35"
+            android:layout_marginBottom="@dimen/y25">
+
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="5dp"
+                android:text="@string/ok"
+                android:background="#000000"
+                android:textSize="@dimen/y33"/>
+
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:background="#000000"
+                android:text="@string/cancel"
+                android:textSize="@dimen/y33"/>
+
+        </LinearLayout>      <!--button-->
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/layout_newfriend"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y100"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="@dimen/y100"
+            android:layout_height="@dimen/y100"
+            android:src="@mipmap/addfriendicon"
+            android:padding="@dimen/x10"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/y100"
+            android:gravity="center_vertical"
+            android:text="@string/newfriend"
+            android:padding="@dimen/y15"
+            android:textSize="@dimen/y35"
+            android:layout_weight="1"
+            android:textColor="@color/black"/>
+
+        <ImageView
+            android:layout_width="@dimen/y15"
+            android:layout_height="@dimen/y15"
+            android:layout_gravity="center|right"
+            android:layout_marginRight="@dimen/y35"
+            android:src="@mipmap/qrcore"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

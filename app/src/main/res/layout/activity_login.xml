@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vdunpay.vchat.login.LoginActivity"
+    android:background="@mipmap/login_background">
+
+    <ImageView
+    android:id="@+id/login_Img"
+    android:layout_width="@dimen/x250"
+    android:layout_height="@dimen/y250"
+    android:src="@mipmap/login_img"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="@dimen/x125"/>
+
+    <TextView
+        android:layout_below="@+id/login_Img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x25"
+        android:text="聚密聊"
+        android:textSize="@dimen/x50"
+        android:layout_centerHorizontal="true"
+        android:textColor="#20ACA9"/>
+
+    <RelativeLayout
+        android:id="@+id/imv_wxlogin"
+        android:layout_width="@dimen/x500"
+        android:layout_height="@dimen/y85"
+        android:layout_above="@+id/imv_qqlogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/y45"
+        android:background="@mipmap/login_button1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:layout_width="@dimen/x50"
+                android:layout_height="@dimen/y50"
+                android:src="@mipmap/login_icon_wx"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  微信登录"
+                android:textSize="@dimen/x30"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/imv_qqlogin"
+        android:layout_width="@dimen/x500"
+        android:layout_height="@dimen/y85"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/y45"
+        android:background="@mipmap/login_button2">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:layout_width="@dimen/x50"
+                android:layout_height="@dimen/y50"
+                android:src="@mipmap/login_icon_qq"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  QQ登录"
+                android:textSize="@dimen/x30"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

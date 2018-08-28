@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebebeb"
+    tools:context="com.vdunpay.vchat.mine.SettingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layout_head"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y130"
+            android:orientation="horizontal"
+            android:fitsSystemWindows="true"
+            android:background="@color/black"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/imv_userinfiback"
+                android:layout_width="@dimen/y50"
+                android:layout_height="@dimen/y50"
+                android:src="@mipmap/back" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/y15"
+                    android:text="@string/userinfo"
+                    android:textSize="@dimen/y35"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/tv_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/y15"
+                android:layout_marginRight="@dimen/y25"
+                android:text="@string/save"
+                android:textSize="@dimen/y35"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lay_usericon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/y15">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/usericon"
+                android:textColor="@color/black"
+                android:textSize="@dimen/y33" />
+
+            <ImageView
+                android:id="@+id/imv_userinfoicon"
+                android:layout_width="@dimen/y150"
+                android:layout_height="@dimen/y150"
+                android:src="@mipmap/mini_avatar_shadow" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            android:id="@+id/lay_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/y15">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:text="@string/username"
+                android:textColor="@color/black"
+                android:textSize="@dimen/y35" />
+
+            <EditText
+                android:id="@+id/edt_myusername"
+                android:layout_width="@dimen/y150"
+                android:layout_height="wrap_content"
+                android:gravity="right|center"
+                android:layout_weight="0.2"
+                android:hint="@string/zhangsan"
+                android:textColor="@color/gray_bold"
+                android:textSize="@dimen/y33"
+                android:theme="@style/MyEditText"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray" />
+
+
+      <!--  <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/y15"
+            android:visibility="invisible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:text="@string/myid"
+                android:textColor="@color/black"
+                android:textSize="@dimen/y35"/>
+
+            <TextView
+                android:id="@+id/tv_myid"
+                android:layout_width="@dimen/y150"
+                android:layout_height="wrap_content"
+                android:gravity="right|center"
+                android:hint="@string/testtext"
+                android:layout_weight="0.9"
+                android:textColor="@color/gray_bold"
+                android:textSize="@dimen/y33" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray" />-->
+
+
+        <LinearLayout
+            android:id="@+id/lay_userqrcore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/y15">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/userqrcore"
+                android:textColor="@color/black"
+                android:textSize="@dimen/y35" />
+
+            <ImageView
+                android:id="@+id/imv_core"
+                android:layout_width="@dimen/y45"
+                android:layout_height="@dimen/y45"
+                android:src="@mipmap/qrcore" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

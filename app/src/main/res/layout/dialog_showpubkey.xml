@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00FFFFFF"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_black_list"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dialog_showpubkey_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:padding="@dimen/y25"
+            android:textSize="@dimen/y35"
+            android:textColor="#ffffff"
+            android:text="@string/yourpubkey"/>
+
+        <RelativeLayout
+            android:id="@+id/dialog_showpubkey_centerlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dialog_showpubkey_title"
+            android:layout_marginLeft="10dp">
+
+            <ImageView
+                android:id="@+id/dialog_showpubkey_pubkeyimg"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/pubkicon" />
+
+            <TextView
+                android:id="@+id/tv_showpubkey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/dialog_showpubkey_pubkeyimg"
+                android:padding="@dimen/y25"
+                android:singleLine="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/y33"
+                android:lineSpacingExtra="@dimen/y5"
+                android:text="11111111111111111111111111111111111111111111111111111+"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_below="@id/dialog_showpubkey_centerlayout"
+            android:id="@+id/btn_pubok"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="@dimen/y35"
+            android:layout_marginBottom="@dimen/y25"
+            android:text="@string/ok"
+            android:textSize="@dimen/y33"
+            android:background="#000000"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

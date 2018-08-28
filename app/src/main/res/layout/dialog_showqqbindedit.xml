@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00FFFFFF"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="@drawable/layout_black_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#000000"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:gravity="center_vertical"
+            android:text="  我的QQ"/>          <!--标题-->
+
+        <RelativeLayout
+            android:id="@+id/dialog_showqqbindedit_Add_Account"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+
+            <ImageView
+                android:id="@+id/dialog_showqqbindedit_add_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:scaleType="center"
+                android:adjustViewBounds="true"
+                android:src="@mipmap/icon_add3x" />
+
+            <TextView
+                android:layout_toRightOf="@id/dialog_showqqbindedit_add_account"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="添加绑定QQ账号"
+                android:textColor="@color/iconblue"/>
+
+
+        </RelativeLayout>    <!--my qq-->
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dcdcdc" />          <!--line-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="right"
+            android:layout_marginTop="@dimen/y35"
+            android:layout_marginBottom="@dimen/y25">
+
+            <Button
+                android:id="@+id/btn_bindqqok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="5dp"
+                android:text="@string/ok"
+                android:background="#000000"
+                android:textSize="@dimen/y33"/>
+
+            <Button
+                android:id="@+id/btn_bindqqcancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:background="#000000"
+                android:text="@string/cancel"
+                android:textSize="@dimen/y33"/>
+
+        </LinearLayout>      <!--button-->
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

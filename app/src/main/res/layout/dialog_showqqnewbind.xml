@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00FFFFFF"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_horizontal"
+          android:layout_marginTop="@dimen/y25"
+          android:text="@string/qqbind"
+          android:textColor="@color/black"
+          android:textSize="@dimen/y35"/>
+
+        <EditText
+            android:id="@+id/edt_qqnumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y25"
+            android:padding="@dimen/y25"
+            android:textSize="@dimen/y33"
+            android:hint="@string/qqnumber"/>
+
+        <EditText
+            android:id="@+id/edt_reqqnumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/y25"
+            android:textSize="@dimen/y33"
+            android:hint="@string/reqqnumber"/>
+
+        <Button
+            android:id="@+id/btn_bingqqok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y35"
+            android:layout_marginBottom="@dimen/y25"
+            android:text="@string/ok"
+            android:background="@drawable/button_black"
+            android:textSize="@dimen/y33"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
